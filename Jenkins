@@ -22,8 +22,6 @@ pipeline {
                 sh 'echo step 2'
             }
         }
-
-
         stage('run-parallel-branches') {
             steps {
                 parallel(
@@ -35,8 +33,15 @@ pipeline {
                     }
                 )   
             }
+
+        stage("First step") {
+            steps {
+                sh 'Gongratulations!!!!'
+            }
         }
 
 
+
+        }
     }
 }
