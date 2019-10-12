@@ -36,12 +36,9 @@ pipeline {
         }
         stage("Third step") {
             steps {
-                sh 'echo Gongratulations!!!!'
+                sh 'echo Gongratulations'
             }
         }
-
-
-
         
     }
 }
