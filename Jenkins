@@ -34,9 +34,9 @@ pipeline {
                 )   
             }
 
-        stage("First step") {
+        stage("Third step") {
             steps {
-                sh 'Gongratulations!!!!'
+                sh 'echo Gongratulations!!!!'
             }
         }
 
